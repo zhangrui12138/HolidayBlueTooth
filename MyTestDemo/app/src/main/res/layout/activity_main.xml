@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<Button
+    android:id="@+id/isSupportBlueTooth"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="判断设备是否支持蓝牙"/>
+
+<Button
+        android:id="@+id/isOpenBlueTooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="判断设备是否打开蓝牙"/>
+
+<Button
+        android:id="@+id/OpenBlueTooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开蓝牙设备"/>
+
+<Button
+        android:id="@+id/CloseBlueTooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭蓝牙设备"/>
+
+<Button
+        android:id="@+id/SearchBlueToothDevices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="搜索已经配对的蓝牙设备"/>
+
+<Button
+        android:id="@+id/SearchAvaliableBlueToothDevices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始搜索可发现的设备"/>
+<Button
+        android:id="@+id/DeviceVisiable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置设备可见"/>
+
+<Button
+        android:id="@+id/SetDeviceDisVisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置设备不可见"/>
+
+</LinearLayout>
+    <ListView
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:background="#ffffff"
+        android:layout_height="wrap_content"
+        android:id="@+id/myList"></ListView>
+</android.support.v4.widget.DrawerLayout>
